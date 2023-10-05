@@ -1,0 +1,79 @@
+Table	------------------	Description
+Immigration
+cic_id	------------------	primary key
+year	------------------	4 digit year
+month	------------------	Numeric month
+cit	------------------	
+res	------------------	
+port	------------------	Port of admission
+arr_date	------------------	arrived date
+mode	------------------	Mode of transportation (1 = Air; 2 = Sea; 3 = Land; 9 = Not reported)
+address	------------------	Code ctiy
+dep_date	------------------	Departure Date from the USA
+birth_day	------------------	Age of Respondent in Years
+visa	------------------	Visa codes collapsed into three categories
+total	------------------	Field used for summary statistics
+entdepdate	------------------	Departure Flag - Departed, lost I-94 or is deceased
+matflag	------------------	Match flag - Match of arrival and departure records
+birth_year	------------------	4 digit year of birth
+dtaddto	------------------	Character Date Field - Date to which admitted to U.S. (allowed to stay until)
+gender	------------------	Non-immigrant sex
+airline	------------------	Code airline
+admnum	------------------	
+fltno	------------------	
+visatype	------------------	Type visa
+		
+Tempurare
+id	---------------------	primary key
+dt	---------------------	date time
+avg_temperaturedouble	---------------------	AverageTemperature
+avg_uncertaydouble	---------------------	AverageTemperatureUncertainty
+city	---------------------	name city
+country	---------------------	name country
+latitude	---------------------	latitude
+longitude	---------------------	longitude
+		
+Demographic
+id	---------------------	primary key
+city	---------------------	name city
+state	---------------------	name state
+median_age	---------------------	Median age
+male_populationdouble	---------------------	Male Population
+female_populationdouble	---------------------	Female Population
+total_population	---------------------	Total Population
+number_of_veterans	---------------------	Number of Veterans
+foreign_born	---------------------	Foreign-born
+avg_house_hold_size	---------------------	Average Household Size
+stage_code	---------------------	State Code
+race	---------------------	Race
+total	---------------------	
+		
+Aiport
+ident	---------------------	primary key
+type	---------------------	Type flight
+name	---------------------	name flight
+elevation_ft	---------------------	Elavation
+continent	---------------------	contient
+iso_country	---------------------	code country
+iso_region	---------------------	code region
+municipality	---------------------	municipality
+gps_code	---------------------	code gps
+iata_code	---------------------	code iata
+local_code	---------------------	Local code
+coordinates	---------------------	coordinates
+		
+dimension_stage
+code	---------------------	code stage
+name	---------------------	name stage
+		
+dimension_country
+code	---------------------	code country
+name	---------------------	name country
+		
+dimention_mode
+code	------------------	code mode
+name	---------------------	name mode
+		
+dimention_airport
+code	---------------------	code airport
+name	---------------------	name airport
